@@ -65,3 +65,4 @@ gem 'haml-rails'
 
 #google app vision導入のため
 gem 'google-cloud-vision'
+
