@@ -65,3 +65,21 @@ gem 'haml-rails'
 
 #google app vision導入のため
 gem 'google-cloud-vision'
+
+#漢字→ひらがな→ローマ字変換時に利用
+gem 'miyabi'
+
+#ローマ字→ひらがな変換時に利用
+gem 'romkan'
+
+#Javaのライブラリを使うためのgem。kuromojiで必要。
+gem 'rjb', '~> 1.5', '>= 1.5.9'
+
+#Javaで作成されたオープンソースの日本語形態素解析エンジンkuromojiを使うためのgem。zipangで必要。
+gem 'kuromoji'
+
+#ローマ字とカナを相互変換するライブラリを使うためのgem。zipangで必要。
+gem 'romaji'
+
+#日本語をＵＲＬ用ローマ字に変換するgem。漢字仮名交じりの文字列からでもローマ字化できる
+gem 'zipang'
