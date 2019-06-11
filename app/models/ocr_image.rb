@@ -1,0 +1,2 @@
+class OcrImage < ApplicationRecord
+end
