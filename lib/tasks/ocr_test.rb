@@ -2,7 +2,7 @@ require "google/cloud/vision"
 
 image_annotator = Google::Cloud::Vision::ImageAnnotator.new
 
-image_path  = "/Users/ichikawafumishou/projects/shinobi-tool1/app/assets/images/test2.png"
+image_path  = "/Users/ichikawafumishou/projects/shinobi-tool1/app/assets/images/test3.jpg"
 
 response = image_annotator.text_detection(
   image: image_path,
@@ -14,4 +14,3 @@ response = image_annotator.text_detection(
       puts text.description
     end
   end
-  

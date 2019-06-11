@@ -66,3 +66,6 @@ gem 'haml-rails'
 #google app vision導入のため
 gem 'google-cloud-vision'
 
+# アイコン
+gem "font-awesome-rails"
+gem 'font-awesome-sass', '~> 5.4.1'

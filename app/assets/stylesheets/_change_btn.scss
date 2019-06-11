@@ -1,0 +1,28 @@
+.change_btn {
+  width: 160px;
+  height: 160px;
+  float: right;
+  bottom: 24px;
+  right: 24px;
+  position: fixed;
+  z-index: 1000;
+  &__circle {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color:rgba(23, 71, 202, 0.623);
+    &__text {
+      position: fixed;
+      bottom: 105px;
+      right: 100px;
+      font-size: 22px;
+      text-align: center;
+      color: black;
+    }
+    &__icon {
+      text-align: center;
+      padding-top: 20px;
+      .white { color: white; }
+    }
+  }
+}
