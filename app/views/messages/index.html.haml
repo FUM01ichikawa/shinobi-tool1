@@ -1,5 +1,13 @@
 %body
 .bg
   .service_name SHINOBI tool1
-= render 'calculator'
-= render 'change_btn'
+
+  
+  .btn_container
+    =link_to new_message_path, style:'text-decoration:none;color:white' do
+      .new_message_btn　new_messageへ移動（newアクション）
+    =link_to messages_path, style:'text-decoration:none;color:white' do
+      .search_message_btn　messageへ移動（showアクション）
+      
+  
+

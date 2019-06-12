@@ -1,9 +1,9 @@
-.change_btn {
+.ocr_image_btn {
   width: 160px;
   height: 160px;
   float: right;
   bottom: 24px;
-  right: 24px;
+  right: 324px;
   position: fixed;
   z-index: 1000;
   &__circle {
@@ -14,7 +14,7 @@
     &__text {
       position: fixed;
       bottom: 105px;
-      right: 100px;
+      right: 400px;
       font-size: 22px;
       text-align: center;
       color: black;

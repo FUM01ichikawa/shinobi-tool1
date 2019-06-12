@@ -1,2 +1,13 @@
-%h1 OcrImages#new
-%p Find me in app/views/ocr_images/new.html.haml
+%body
+.bg
+  .service_name SHINOBI tool1
+  .container_box
+  = form_for @ocr_image do |image_form|
+    .image_box.box-image-1
+    = image_form.file_field :image_form ,type:'file',name:"image"
+    .description_text_box
+      %h2 Google Cloud Vision API
+      %p OCR（光学式文字認識）技術を活用してテキストを検出します。
+      = image_form.submit 'スタート', class:"btn"
+      
+      

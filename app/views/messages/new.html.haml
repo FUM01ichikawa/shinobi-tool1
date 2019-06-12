@@ -1,6 +1,6 @@
 %body
-.bgr
+.bg
   .service_name SHINOBI tool1
-  
-
-= render 'change_btn'
+  = form_for @message do |original_text_form|
+    .original_text_box
+    = original_text_form.text_field :original_text, class: "original_text_form", placeholder: "テキストを入力してください。"
