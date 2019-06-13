@@ -1,12 +1,15 @@
 %body
 .bg
   .service_name SHINOBI tool1
-
-  %h1.result_text
+  
+  .result_headding オリジナルテキスト
+  .result_text
     = @message.original_text
 
-  %h1.result_text
+  .result_headding ローマ字変換
+  .result_text
     = @message.zipang_text
 
-  %h1.result_text
+  .result_headding 数字変換
+  .result_text
     = @message.zipang_to_num
