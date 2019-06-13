@@ -87,3 +87,6 @@ gem 'romaji'
 
 #日本語をＵＲＬ用ローマ字に変換するgem。漢字仮名交じりの文字列からでもローマ字化できる
 gem 'zipang'
+
+#binding.pry利用のため導入
+gem 'pry-rails'
