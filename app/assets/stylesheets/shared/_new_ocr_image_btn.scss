@@ -1,0 +1,28 @@
+.ocr_image_btn {
+  width: 125px;
+  height: 125px;
+  z-index: 1000;
+  margin: 100px auto 0;
+
+  &__circle {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color:rgba(23, 71, 202, 0.1);
+    border:solid 2px white;
+
+    &__text {
+      font-size: 22px;
+      text-align: center;
+      color: black;
+    }
+    &__icon {
+      text-align: center;
+      .white { color: white; }
+    }
+    .icon_inyou{
+      width:50px;
+      padding: 35px 0 0 35px;
+    }
+  }
+}
