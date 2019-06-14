@@ -1,7 +1,29 @@
-%body
-.bg
-  .service_name SHINOBI tool1
+.bg 
+  = render 'shared/application_logo_height100'
+
+  .function_btn_container
   
-= render 'calculator'
-= render 'index_message_btn'
-= render 'new_ocr_image_btn'
+    .ocr_image_function_box
+      = render 'new_ocr_image_btn'
+      .function_name_text 
+        Text Extraction
+      .funciton_overview_text
+        Google Cloud Vision APIを使用し、光学式文字認識(OCR)機能で画像内のテキストを検出します。
+      
+    .message_function_box
+      = render 'index_message_btn'   
+      .function_name_text
+        Text Conversion
+      .funciton_overview_text
+        複数のGemを活用し、入力されたオリジナルテキストを変換し数値で出来た暗号を作成します。
+
+    .calculator_function_box
+      = render 'calculator_btn'
+      .function_name_text
+        Decryption
+      .funciton_overview_text
+        Text Conversionで作成された暗号を解読し、オリジナルテキストを取得することが出来ます。
+  
+  .footer
+    Created by Fumiaki Ichikawa
+  
