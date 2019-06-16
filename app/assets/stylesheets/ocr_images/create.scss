@@ -4,20 +4,82 @@
   min-height: 960px; 
   }
 
-.service_name{
-  display: block;
-  width:800px;
-  height:200px;
-  margin: auto;  
-  font-size: 50px;
-  font-style: inherit;
-  font-family: Impact;
-  text-align: center;
-  padding-top: 150px;
-}
 
-.sell-box_container{
-  display: block;
-  width: 100%;
-  height: 100%
+  .main_container__create{
+    display: flex;
+    width: 100%;
+    height: 550px;
+    background-color: rgba(236,229, 218,0.3);
+  
+
+      .ocr_image_create_area {
+        display: block;
+        width: 100%;
+        height: 550px;
+        margin: 0 20%;
+      
+        .upper_container{
+          display: block;
+          width: calc(100%-50px);
+          height: 400px;
+          box-sizing: border-box;
+          margin: 40px 100px 0 100px;
+            
+            .function_name{
+              display: block;
+              min-width: 500px;
+              height: 50px;
+              font-size:40px;
+              font-family: Avenir Next;
+              color:white;
+              box-sizing: border-box;
+            }
+
+            .function_description{
+              display: block;
+              width: 800px;
+              height: 50px;
+              font-size:20px;
+              font-family: 'Avenir Next',游ゴシック体,メイリオ;
+              color:white;
+              box-sizing: border-box;
+              word-wrap: normal;
+            }
+
+            .ocr_result_box{
+              display: block;
+              width: 100%;
+              height: 300px;
+              font-size:16px;
+              border: 1px solid white;
+              color: white;
+              font-family: 'Avenir Next',游ゴシック体,メイリオ;
+              background-color: rgba(90, 132, 247, 0.2);
+            }
+          }
+        }
+
+        .lower_container{
+          display: flex;
+          width: 100%;
+          height: 100px;
+          margin: 0 100px;
+          cursor: pointer;  
+        }
+        
+          .square_btn{
+            display: block;
+            height: 50px;
+            width: 350px;
+            cursor: pointer;  
+            text-align: center;
+            margin: 25px;
+            font-size:20px;
+            border: 1px solid white;
+            border-radius: 10px;
+            color: white;
+            line-height: 50px;
+            font-family: 'Avenir Next',游ゴシック体,メイリオ;
+            background-color: rgba(90, 132, 247, 0.2);
+            } 
 }
