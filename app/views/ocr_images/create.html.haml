@@ -1,4 +1,16 @@
-%body
 .bg
-  .service_name SHINOBI tool1
-  
+  = render 'shared/application_logo_height100'
+  .main_container__create
+    .ocr_image_create_area
+      .upper_container 
+        .function_name Text Extraction Ocr Result
+        .function_description Google Cloud Vision APIの光学式文字認識(OCR)機能のテキスト抽出の結果です。
+        .ocr_result_box
+          = @ocr_image.ocr_result
+    
+      .lower_container
+        =link_to ocr_images_path, style:'text-decoration:none;color:white' do
+          .square_btn Retun Top
+        =link_to messages_path, style:'text-decoration:none' do
+          .square_btn Text Conversion
+          

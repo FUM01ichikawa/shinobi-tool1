@@ -1,6 +1,6 @@
 .bg
   = render 'shared/application_logo_height100'
-  .main_container
+  .main_container__new
     .ocr_image_upload_area
       = form_for @ocr_image do |ocr_image_form|
         .upper_container
@@ -8,13 +8,13 @@
             = render 'new_ocr_image_btn'
           .description_text_box
             .function_name Text Extraction
-            .function_description Google Cloud Vision APIを使用し、光学式文字認識(OCR)機能で画像内のテキストを検出します。
+            .function_description Google Cloud Vision APIを使用し、光学式文字認識(OCR)機能で画像内のテキストを抽出します。
       
         .lower_container
           = ocr_image_form.label :ocr_image_form, class: "ocr_image_box", for:"ocr_image_uploader" do
             .input_area
               = ocr_image_form.file_field :name ,type:'file', id:"ocr_image_uploader"
             .input_text クリックしてファイルを選択してください。
-          = ocr_image_form.submit 'テキストを検出する', class:"ocr_start_btn"
+          = ocr_image_form.submit 'テキストを抽出する', class:"ocr_start_btn"
 
           
