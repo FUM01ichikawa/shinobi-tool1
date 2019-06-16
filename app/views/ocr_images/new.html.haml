@@ -1,13 +1,20 @@
-%body
 .bg
-  .service_name SHINOBI tool1
-  .container_box
-  = form_for @ocr_image do |ocr_image_form|
-    .image_box.box-image-1
-    = ocr_image_form.file_field :name ,type:'file'
-    .description_text_box
-      %h2 Google Cloud Vision API
-      %p OCR（光学式文字認識）技術を活用してテキストを検出します。
-      = ocr_image_form.submit 'スタート', class:"btn"
+  = render 'shared/application_logo_height100'
+  .main_container
+    .ocr_image_upload_area
+      = form_for @ocr_image do |ocr_image_form|
+        .upper_container
+          .icon_box
+            = render 'new_ocr_image_btn'
+          .description_text_box
+            .function_name Text Extraction
+            .function_description Google Cloud Vision APIを使用し、光学式文字認識(OCR)機能で画像内のテキストを検出します。
       
-      
+        .lower_container
+          = ocr_image_form.label :ocr_image_form, class: "ocr_image_box", for:"ocr_image_uploader" do
+            .input_area
+              = ocr_image_form.file_field :name ,type:'file', id:"ocr_image_uploader"
+            .input_text クリックしてファイルを選択してください。
+          = ocr_image_form.submit 'テキストを検出する', class:"ocr_start_btn"
+
+          
