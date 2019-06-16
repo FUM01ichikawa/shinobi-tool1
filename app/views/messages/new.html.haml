@@ -1,6 +1,15 @@
-%body
 .bg
-  .service_name SHINOBI tool1
-  = form_for @message do |original_text_form|
-    .original_text_box
-    = original_text_form.text_field :original_text, class: "original_text_form", placeholder: "テキストを入力し、Enterを押してください。"
+  = render 'shared/application_logo_height100'
+  .main_container__message_new
+    .message_new_area
+      .upper_container
+        .icon_box
+          = render 'shared/index_message_btn' 
+        .description_text_box
+          .function_name Text Conversion
+          .function_description テキストをローマ字変換→数値変換し暗号を作成します。
+        = form_for @message do |original_text_form|
+          .original_text_box
+            = original_text_form.text_field :original_text, class: "original_text_form", placeholder: "テキストを入力し、Enterを押してください。"
+
+          

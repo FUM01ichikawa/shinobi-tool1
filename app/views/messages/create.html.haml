@@ -1,15 +1,26 @@
-%body
 .bg
-  .service_name SHINOBI tool1
-  
-  .result_headding オリジナルテキスト
-  .result_text
-    = @message.original_text
+  = render 'shared/application_logo_height50'
+  .main_container_message__create
+    .conversion_result_box_container
+      .conversion_result_box
+        .result_headding Original-text
+        .result_text_original
+          = @message.original_text
+        =link_to ocr_images_path, style:'text-decoration:none' do
+          .square_btn_return_top Retun Top
 
-  .result_headding ローマ字変換
-  .result_text
-    = @message.zipang_text
+      .conversion_result_box
+        .result_headding Roman character
+        .result_text_roman
+          = @message.zipang_text
+        =link_to messages_path, style:'text-decoration:none' do
+          .square_btn_copy Copy Encryption
 
-  .result_headding 数字変換
-  .result_text
-    = @message.zipang_to_num
+      .conversion_result_box
+        .result_headding Encryption
+        .result_text_encryption
+          = @message.zipang_to_num
+        =link_to messages_path, style:'text-decoration:none' do
+          .square_btn_decryption Decryption
+      
+      
