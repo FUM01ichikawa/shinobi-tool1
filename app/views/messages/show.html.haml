@@ -1,0 +1,23 @@
+.bg
+  = render 'shared/application_logo_height100'
+  .main_container__message_show
+    .message_show_area
+      .conversion_result_box
+        = render 'shared/calculator'
+        = submit_tag "Decryption",:zipang_to_num => nil ,class:"square_btn_decryption"
+
+      .conversion_result_box
+        .result_headding Roman character
+        .result_text_roman_reverse
+          //= @message.zipang_text
+        =link_to messages_path, style:'text-decoration:none' do
+          .square_btn_copy_reverse Copy Original-text
+
+      .conversion_result_box
+        .result_headding Original-text
+        .result_text_original
+          //= @message.original_text
+        =link_to ocr_images_path, style:'text-decoration:none' do
+          .square_btn_return_top Retun Top
+
+      
