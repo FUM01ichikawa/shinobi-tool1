@@ -43,7 +43,6 @@
             color:white;
             margin: 0 auto 10px;
             text-align: left;
-            overflow-wrap: break-word;
             font-family: 'Avenir Next',游ゴシック体,メイリオ;
             border: 1px solid white;
             border-radius: 3px;
@@ -58,10 +57,11 @@
             @include result_text;
             background:linear-gradient(to right,#3b81ebcc,#E36A3B);
           }
-          
-          .result_text_encryption{
+
+          .result_text_decryption{
             @include result_text;
             background-color:rgba(#3b81ebcc, 0.8);
+            word-wrap: break-word;
           }
 
           @mixin square_btn{
