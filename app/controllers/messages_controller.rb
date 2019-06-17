@@ -27,9 +27,10 @@ class MessagesController < ApplicationController
   end
 
   def show
+    
   end
 
-  def serch
+  def search
   end
 
   private
