@@ -27,7 +27,7 @@ class MessagesController < ApplicationController
   end
 
   def show
-    
+    @message = Message.search(params[:search])
   end
 
   def search
