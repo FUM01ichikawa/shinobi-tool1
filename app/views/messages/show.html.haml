@@ -4,11 +4,11 @@
     .message_show_area
       .conversion_result_box
         .result_headding Decryption
-        = form_tag(messages_path, :method => "get") do
+        = form_tag(messages_search_path, :method => "get") do
           = text_field_tag "search","暗号を入力して、\nDecryption(解読)を押してください。", class:'result_text_decryption'
           //= @message.zipang_to_num
           = submit_tag "Decryption",:zipang_to_num => nil ,class:"square_btn_decryption"
-
+          
       .conversion_result_box
         .result_headding Roman character
         .result_text_roman_reverse
@@ -22,5 +22,3 @@
           //= @message.original_text
         =link_to ocr_images_path, style:'text-decoration:none' do
           .square_btn_return_top Retun Top
-
-      

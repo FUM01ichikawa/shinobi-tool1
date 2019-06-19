@@ -1,4 +1,24 @@
 .bg
   = render 'shared/application_logo_height100'
-  .main_container__message_search
-    .message_search_area
+  .main_container__message_show
+    .message_show_area
+      .conversion_result_box
+        .result_headding Encryption
+        .result_text_encryption
+          = @message.zipang_to_num
+        =link_to messages_path, style:'text-decoration:none' do
+          .square_btn_encryption Create New Encryption
+          
+      .conversion_result_box
+        .result_headding Roman character
+        .result_text_roman_reverse
+          = @message.zipang_text
+        =link_to messages_path, style:'text-decoration:none' do
+          .square_btn_copy_reverse Copy Original-text
+
+      .conversion_result_box
+        .result_headding Original-text
+        .result_text_original
+          = @message.original_text
+        =link_to ocr_images_path, style:'text-decoration:none' do
+          .square_btn_return_top Return Top
