@@ -64,6 +64,14 @@
             word-wrap: break-word;
           }
 
+          .result_text_encryption{
+            @include result_text;
+            background-color:rgba(#3b81ebcc, 0.8);
+            word-wrap: break-word;
+          }
+
+          
+
           @mixin square_btn{
             display: block;
             box-sizing: border-box;
@@ -93,6 +101,12 @@
           .square_btn_decryption{
             @include square_btn;
             background-color:rgba(#3b81ebcc, 0.8);
+          }
+
+          .square_btn_encryption{
+            @include square_btn;
+            background-color:rgba(#3b81ebcc, 0.8);
+            word-wrap: break-word;
           }
         
     }

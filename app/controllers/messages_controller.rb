@@ -27,10 +27,12 @@ class MessagesController < ApplicationController
   end
 
   def show
-    @message = Message.search(params[:search])
   end
 
   def search
+    @message = Message.search(params[:search])
+    rescue
+    redirect_to ocr_images_path
   end
 
   private
