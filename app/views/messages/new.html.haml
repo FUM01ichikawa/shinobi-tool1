@@ -10,6 +10,8 @@
           .function_description テキストをローマ字変換→数値変換し暗号を作成します。
         = form_for @message do |original_text_form|
           .original_text_box
-            = original_text_form.text_field :original_text, class: "original_text_form", placeholder: "テキストを入力し、Enterを押してください。"
+            = original_text_form.text_area :original_text, class: "original_text_form", placeholder: "テキストを入力し、「暗号作成」ボタンを押してください。"
+          %input{name: "button",type:"submit",class:"original_text_submit",value:"暗号作成",style:"WIDTH: 400px; HEIGHT: 50px"}
+
 
           

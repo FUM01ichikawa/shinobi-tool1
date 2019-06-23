@@ -58,11 +58,13 @@
         .result_text_roman_reverse{
           @include result_text;
           background:linear-gradient(to right,#3b81ebcc,#E36A3B);
+          word-wrap: break-word;
         }
         
         .result_text_original{
           @include result_text;
           background-color:rgba(#e95e1e, 0.8);
+          word-wrap: break-word;
         }
         
         
