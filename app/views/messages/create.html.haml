@@ -13,12 +13,11 @@
         .result_headding Roman character
         .result_text_roman
           = @message.zipang_text
-        =link_to messages_path, style:'text-decoration:none' do
-          .square_btn_copy Copy Encryption
+        #text_copy.square_btn_copy Copy Encryption 
 
       .conversion_result_box
         .result_headding Encryption
-        .result_text_encryption
+        #result_text.result_text_encryption
           = @message.zipang_to_num
         =link_to messages_path, style:'text-decoration:none' do
           .square_btn_decryption Decryption
