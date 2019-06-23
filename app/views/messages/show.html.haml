@@ -13,12 +13,11 @@
         .result_headding Roman character
         .result_text_roman_reverse
           //= @message.zipang_text
-        =link_to messages_path, style:'text-decoration:none' do
-          .square_btn_copy_reverse Copy Original-text
+        .square_btn_copy_reverse Copy Original-text
 
       .conversion_result_box
         .result_headding Original-text
-        .result_text_original
+        #original_text.result_text_original
           //= @message.original_text
         =link_to ocr_images_path, style:'text-decoration:none' do
           .square_btn_return_top Retun Top
