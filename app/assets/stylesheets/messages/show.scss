@@ -56,6 +56,7 @@
           .result_text_roman_reverse{
             @include result_text;
             background:linear-gradient(to right,#3b81ebcc,#E36A3B);
+            word-wrap: break-word;
           }
 
           .result_text_decryption{
@@ -107,6 +108,26 @@
             @include square_btn;
             background-color:rgba(#3b81ebcc, 0.8);
             word-wrap: break-word;
+          }
+
+          @mixin placeholder($color) {
+            &::placeholder {
+              color: $color;
+            }
+          
+            // IE__
+            &:-ms-input-placeholder {
+              color: $color;
+            }
+          
+            // Edge
+            &::-ms-input-placeholder {
+              color: $color;
+            }
+          }
+
+          textarea{
+            @include placeholder(white);
           }
         
     }

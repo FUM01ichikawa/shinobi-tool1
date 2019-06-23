@@ -21,7 +21,7 @@
       width: calc(100%-50px);
       height: 150px;
       box-sizing: border-box;
-      margin: 50px 50px 0 50px;
+      margin: 30px 50px 0 50px;
         
       .icon_container{
         display: inline-block;
@@ -77,4 +77,22 @@
             font-size: 18px;
           }
          
+          .original_text_submit{
+            display       : inline-block;
+            font-size     : 12pt;
+            font-family: 'Avenir Next',游ゴシック体,メイリオ;
+            text-align    : center;
+            cursor        : pointer;
+            padding       : 8px 150px;
+            margin        : 10px 250px 0 250px;
+            background    : #e95e1e;
+            color         : white;
+            line-height   : 1em;
+            transition    : .3s;
+            border        : 1px solid #ffffff;
+          }
+          .original_text_submit:hover {
+            color         : #ffffff;
+            background    : #e95e1e;
+          }
   }
