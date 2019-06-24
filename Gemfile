@@ -95,3 +95,7 @@ gem 'pry-rails'
 
 #carrierwaveの導入（publicに保存してocrで参照させる）
 gem "carrierwave"
+
+group :production do
+  gem 'pg'
+end
